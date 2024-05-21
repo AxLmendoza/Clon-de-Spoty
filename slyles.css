@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.2%;
+}
+
+body{
+    font-family: "Rubik"; 
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 30rem 1fr;
+    grid-template-columns: min-content 1fr min-content;
+    margin-bottom: 8rem;
+}
+
+
+/* inicia el topbar */
+
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #101010;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 30rem);
+}
+
+.container-arrows{
+    display: flex;
+    gap: 3rem;
+}
+
+.container-arrows-left, 
+.container-arrows-right {
+    background-color: black;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-arrows-left i, 
+.container-arrows-right i {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.button-user{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.bnt-register{
+    color: #a7a7a7; 
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.6rem;   
+}
+
+.bnt-register:hover{
+    color: #fff;
+    transform: scale(1.04);
+}
+
+.btn-full{
+    font-size: 1.6rem;
+    color: #000; 
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+    font-weight: 700;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
